@@ -1,0 +1,76 @@
+:root {
+  --accent-a1: #aa55f4;
+  --background-a: black;
+}
+/* .figure-a-hero {
+  width: 80%;
+  height: 450px;
+  perspective: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+} */
+
+/* .figure-block-a-hero {
+  width: 70%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.1s linear;
+} */
+
+/* .figure-a1,
+.figure-a2,
+.figure-a3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(220deg, rgba(0, 0, 0, 0.8), transparent),
+    linear-gradient(50deg, var(--accent-a1), transparent);
+  transform-style: preserve-3d;
+  border-radius: 10px;
+} */
+
+/* .figure-a1 {
+  opacity: 0.5;
+  filter: blur(2px);
+  transform: translate3d(0, 0, 4vh) rotateY(30deg);
+  z-index: 3;
+}
+
+.figure-a2 {
+  opacity: 1;
+  transform: translate3d(0, 0, -13vh) rotateY(30deg);
+  z-index: 2;
+}
+
+.figure-a3 {
+  opacity: 0.5;
+  filter: blur(15px);
+  transform: translate3d(0, 0, -26vh) rotateY(30deg);
+  z-index: 1;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 479px) {
+  .figure-a-hero {
+    height: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  .section-main {
+    padding-top: 250px;
+  }
+}
+
+@media (min-width: 701px) {
+  .section-main {
+    padding-top: 300px;
+  }
+} */

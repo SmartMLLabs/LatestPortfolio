@@ -1,0 +1,19 @@
+.animate .block-banner h3 {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.animate .form-banner input,
+.animate .form-banner .text-field {
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

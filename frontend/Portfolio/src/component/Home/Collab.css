@@ -1,0 +1,102 @@
+:root {
+  --background-b1: #1d2838;
+  --background-b2: rgba(29, 40, 56, 0.5);
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.6s forwards;
+}
+
+.fade-in-up.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.fade-in-up.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.fade-in-up.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.fade-in-up.delay-4 {
+  animation-delay: 0.4s;
+}
+
+.fade-in-up.delay-5 {
+  animation-delay: 0.5s;
+}
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  max-width: 1200px;
+  grid-column-gap: 18px;
+  grid-row-gap: 18px;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 10px;
+}
+
+.grid-item {
+  min-height: 131px;
+  padding: 45px;
+  border-radius: 15px;
+  background-color: rgba(29, 40, 56, 0.5);
+  transition: background-image 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.grid-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.grid-item.visible img {
+  opacity: 1;
+  transition: opacity 0.6s ease-out;
+}
+
+.grid-item:hover {
+  background-image: linear-gradient(
+    140deg,
+    var(--background-b1),
+    var(--background-b2)
+  );
+  background-color: transparent;
+}
+
+@media (max-width: 991px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (max-width: 479px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
