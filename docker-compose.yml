@@ -1,8 +1,5 @@
-version: '3.8'
-
 services:
   frontend:
-    image: smartmlwebapp.azurecr.io/frontend:latest
     build:
       context: ./frontend
     ports:
@@ -11,21 +8,20 @@ services:
       - app-network
 
   backend:
-    image: smartmlwebapp.azurecr.io/backend:latest
     build:
       context: ./backend
     ports:
       - "8000:8000"
     networks:
       - app-network
-
+  
   mongodb:
     image: mongo:4.4
     networks:
       - app-network
     volumes:
       - mongo-data:/data/db
-      
+
 networks:
   app-network:
     driver: bridge
