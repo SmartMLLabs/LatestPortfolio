@@ -1,5 +1,7 @@
 fastapi
 uvicorn[standard]
+Uvicorn
+gunicorn
 pydantic
 sqlalchemy
 databases
