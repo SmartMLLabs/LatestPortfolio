@@ -13,7 +13,10 @@ from database import (
 )
 
 origins = [
-    'http://localhost:5174'
+    'https://smartmllabs.com',
+    'http://smartmllabs.com',
+    'http://localhost:5173',
+    'https://localhost:5173'
 ]
 
 app.add_middleware(
