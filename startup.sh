@@ -14,3 +14,5 @@ pip install -r requirements.txt
 
 # Start FastAPI with Uvicorn
 gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app --bind=0.0.0.0:8000
+
+nginx -g 'daemon off;'
