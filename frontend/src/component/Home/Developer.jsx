@@ -61,14 +61,13 @@ const Developer = () => {
             </h1>
           </div>
           <p
-            className="text-[#616d7e] text-[20px]  opacity-0 pt-5"
-            style={{
-              lineHeight: "176%",
-              marginBottom: "42px",
-            }}
+            className="text-[#616d7e] text-lg md:text-xl max-w-[620px] mb-10 leading-relaxed  opacity-0 pt-5"
             ref={(el) => (elementsRef.current[2] = el)}
           >
-            delivering high-quality, user-friendly, and scalable solutions. Our expert team, strategic partnerships, and commitment to continuous R&D ensure we stay at the forefront of AI advancements, driving progress and creating value for our clients.
+            delivering high-quality, user-friendly, and scalable solutions. Our
+            expert team, strategic partnerships, and commitment to continuous
+            R&D ensure we stay at the forefront of AI advancements, driving
+            progress and creating value for our clients.
           </p>
         </div>
 
