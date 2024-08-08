@@ -57,18 +57,20 @@ const WlcmSmart = () => {
               className="text-4xl md:text-6xl font-medium text-white opacity-0 "
               ref={(el) => (elementsRef.current[1] = el)}
             >
-             Pioneering Solutions<br /> for the AI-Driven Future
+              Pioneering Solutions
+              <br /> for the AI-Driven Future
             </h1>
           </div>
           <p
-            className="text-[#616d7e] text-[20px]  opacity-0 pt-5"
-            style={{
-              lineHeight: "176%",
-              marginBottom: "42px",
-            }}
+            className="text-[#616d7e] text-lg md:text-xl max-w-[620px] mb-10 leading-relaxed  opacity-0 pt-5"
             ref={(el) => (elementsRef.current[2] = el)}
           >
-            At SmartML Labs, we are crafting the essential components for tomorrow’s intelligent ecosystem. Our advanced AI technologies and innovative solutions are designed to push boundaries and set new standards across various industries. With a focus on transformative impact and cutting-edge advancements, we are committed to shaping the future of AI and its applications
+            At SmartML Labs, we are crafting the essential components for
+            tomorrow’s intelligent ecosystem. Our advanced AI technologies and
+            innovative solutions are designed to push boundaries and set new
+            standards across various industries. With a focus on transformative
+            impact and cutting-edge advancements, we are committed to shaping
+            the future of AI and its applications
           </p>
         </div>
 

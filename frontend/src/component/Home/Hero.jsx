@@ -30,7 +30,7 @@ const Hero = ({ featuresRef = { current: null } }) => {
   return (
     <section className="relative flex flex-col items-center justify-start py-32 px-10 bg-black overflow-hidden">
       <div className="absolute inset-0 top-[-70px] w-full h-[500px] bg-[radial-gradient(circle_farthest-side_at_50%_-170%,_transparent,_black),linear-gradient(to_bottom,_#aa55f4,_transparent)] opacity-[0.8]"></div>
-      <div className="max-w-5xl mx-auto px-3 text-center pt-32 pb-8 relative z-10">
+      <div className="max-w-5xl mx-auto px-3 text-center pt-32 pb-8 relative ">
         <h1 className="text-4xl md:text-5xl lg:text-8xl font-semibold text-white mb-6">
           SmartML Labs
         </h1>
