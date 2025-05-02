@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import CustomCursor from "../Cursor/CustomCursor";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +21,7 @@ const Header = () => {
 
   return (
     <nav className="fixed w-full z-10 ">
+      <CustomCursor />
       <div className="w-full px-4 md:px-6 lg:px-12 py-8 flex justify-between items-center">
         <div className="text-white text-3xl font-semibold transition-transform transform hover:scale-95">
           SmartML Labs

@@ -57,18 +57,19 @@ const SmartContracts = () => {
               className="text-4xl md:text-6xl lg:text-[66px]  font-medium text-white  opacity-0"
               ref={(el) => (elementsRef.current[1] = el)}
             >
-             We at SmartML Labs,
+              We at SmartML Labs,
             </h1>
           </div>
           <p
-            className="text-[#616d7e] text-[20px] lg:mr-20 opacity-0 pt-5 "
-            style={{
-              lineHeight: "176%",
-              marginBottom: "42px",
-            }}
+            className="text-[#616d7e] text-lg md:text-xl max-w-[620px] mb-10 leading-relaxed lg:mr-20 opacity-0 pt-5 "
             ref={(el) => (elementsRef.current[2] = el)}
           >
-            transform industries and enhance everyday life. Our mission is to leverage cutting-edge AI technology to provide advanced analytics, smart automation, personalized assistants, and predictive modeling across healthcare, finance, retail, manufacturing, and education sectors. With a focus on innovation, integrity, customer-centricity, and ethical AI
+            transform industries and enhance everyday life. Our mission is to
+            leverage cutting-edge AI technology to provide advanced analytics,
+            smart automation, personalized assistants, and predictive modeling
+            across healthcare, finance, retail, manufacturing, and education
+            sectors. With a focus on innovation, integrity, customer-centricity,
+            and ethical AI
           </p>
         </div>
 

@@ -17,7 +17,7 @@ const icons = [
     img: MoneyImg,
     title: "Web Development",
     description:
-      "At SmartML Labs, we specialize in creating intelligent web applications by integrating advanced AI technologies, enhancing user experiences, automating processes, and providing actionable insights for a smarter digital future",
+      "At SmartML Labs, we specialize in creating intelligent web applications by integrating advanced AI technologies, enhancing user experiences, automating processes, and providing actionable insights for a smarter digital future.",
   },
   {
     img: GovernanceImg,
@@ -34,7 +34,8 @@ const icons = [
   {
     img: ReliabilityImg,
     title: "Cloud Services",
-    description: "At SmartML Labs, we offer comprehensive Cloud Services to empower your digital transformation journey. From scalable infrastructure solutions to robust data storage and seamless application hosting, our expertise ensures high availability, security, and performance.",
+    description:
+      "At SmartML Labs, we offer comprehensive Cloud Services to empower your digital transformation journey. From scalable infrastructure solutions to robust data storage and seamless application hosting, our expertise ensures high availability, security, and performance.",
   },
   {
     img: InteroperabilityImg,
@@ -75,9 +76,9 @@ const Features = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-black pt-[100px]">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-black pt-20 px-4">
       <div
-        className={`text-[#aa55f4] font-thin py-2 px-4 rounded-xl mb-4 border border-[#aa55f4] border-opacity-35 tracking-[2px] text-[13px] transition-opacity duration-1000 ${
+        className={`text-[#aa55f4] font-thin py-2 px-4 rounded-xl mb-4 border border-[#aa55f4] border-opacity-35 tracking-[2px] text-xs transition-opacity duration-1000 ${
           visibleElements.includes(elementsRef.current[0])
             ? "opacity-100"
             : "opacity-0"
@@ -86,54 +87,47 @@ const Features = () => {
       >
         Services
       </div>
-      <div className="max-w-5xl md:max-w-7xl lg:max-w-5xl mx-auto text-center mb-14">
+      <div className="max-w-5xl mx-auto text-center mb-14">
         <h1
-          className={`text-4xl  md:text-6xl lg:text-[66px] font-medium text-white transition-opacity duration-1000 ${
+          className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-white transition-opacity duration-1000 ${
             visibleElements.includes(elementsRef.current[1])
               ? "opacity-100"
               : "opacity-0"
           }`}
           ref={(el) => (elementsRef.current[1] = el)}
-          style={{
-            lineHeight: "1.1",
-            paddingLeft: "10px",
-            paddingRight: "10px",
-          }}
+          style={{ lineHeight: "1.2" }}
         >
           Smarter Solutions for a Smarter World
         </h1>
       </div>
-      <div className="flex items-center justify-center bg-black pb-8 lg:px-[140px]">
-        <div className="grid gap-6 p-4 w-full max-w-7xl grid-cols-1 sm:grid-cols-2 sm:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 ">
+      <div className="flex items-center justify-center bg-black pb-8 px-4">
+        <div className="grid gap-6 w-full max-w-7xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {icons.map(({ img, title, description }, index) => (
             <div
               key={index}
               ref={(el) => (elementsRef.current[index + 2] = el)}
-              className={`flex flex-col items-center justify-center p-8 bg-black rounded-md shadow-md text-white transition-opacity duration-1000 ${
+              className={`flex flex-col items-center justify-center p-6 bg-black rounded-md shadow-md text-white transition-opacity duration-1000 ${
                 visibleElements.includes(elementsRef.current[index + 2])
                   ? "opacity-100"
                   : "opacity-0"
               }`}
               style={{ transitionDelay: `${index * 0.2}s` }}
             >
-              <div className="rounded-xl p-6 mb-5 flex items-center justify-center w-20 h-20 bg-[#0A0D13]">
+              <div className="w-16 h-16 rounded-tr-2xl rounded-tl-lg rounded-br-lg rounded-bl-2xl bg-[#0A0D13] p-3 mb-4 flex items-center justify-center">
                 <img
                   src={img}
                   alt={title}
-                  className="h-20 w-20 mb-2"
+                  className="h-full w-full object-cover"
                   style={{
                     filter:
                       "invert(51%) sepia(69%) saturate(5784%) hue-rotate(258deg) brightness(100%) contrast(101%)",
                   }}
                 />
               </div>
-              <h2 className="text-xl md:text-2xl font-semibold mb-5">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 text-center">
                 {title}
               </h2>
-              <p
-                className="text-center text-[#616d7e] opacity-95"
-                style={{ lineHeight: 1.4 }}
-              >
+              <p className="text-center text-[#616d7e] opacity-95 text-sm sm:text-base md:text-lg">
                 {description}
               </p>
             </div>

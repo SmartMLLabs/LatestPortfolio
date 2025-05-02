@@ -6,6 +6,7 @@ import Collab from "../component/Home/Collab";
 import Developer from "../component/Home/Developer";
 import Banner from "../component/Home/Banner";
 import Hero from "../component/Home/Hero";
+import Project from "../component/Home/Project";
 
 export default function Home() {
   const featuresRef = useRef(null);
@@ -17,7 +18,9 @@ export default function Home() {
         <Features />
       </div>
       <SmartContracts />
-      <Stats />
+      <Project />
+
+      {/* <Stats /> */}
       {/* <Collab /> */}
       <Developer />
       <Banner />
